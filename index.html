@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="12521719.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+header ul li:first-child {
+  position: relative;
+}
+header nav ul li:first-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background: var(--bs-light); 
+}
+</style>
+<body>
+    <div class="container">
+        <img src="12521719.png" alt="Dark Aesthetic Image" class="image">
+    </div>
+    <header>
+        <h1>MY PORT<span>FOLIO</span></h1>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <nav>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="home-content">
+                <h1>Hi, I'm  <span id="typed-text"></span><span class="cursor">|</span></h1>
+                <h2>Web Developer | AI Enthusiast</h2>
+                <p>
+                    Passionate about crafting stunning and interactive web experiences. I build modern, 
+                    responsive websites with HTML, CSS, and JavaScript.
+                </p>
+                <a href="projects.html" class="btn">View My Work</a>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a  href="https://wa.me/916380440108" target="_blank"><img src="icons/whatsapp.png"></a></li>
+                    <li><a href="https://www.linkedin.com/in/vishwa-r-734040298/" target="_blank"><img src="icons/linkedin.png"></a></li>
+                    <li><a href="https://www.instagram.com/dark____phoenix_____/" target="_blank"><img src="icons/instagram.png"></a></li>
+                    <li><a href="https://github.com/Dredphoenix" target="_blank"><img src="icons/github-sign.png"></a></li>
+                   </ul>
+            </div>
+            <!-- CLOCK AND DATE -->
+            <div class="clock-container">
+                <div class="clock" id="clock"></div>
+        </div>
+            </section>     
+    </main>
+   
+ <!-- PARTICLE ANIMATION   -->
+    <div id="particles-js"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 100 },
+            size: { value: 3 },
+            move: { speed: 2 },
+            color: { value: "#c3282b" },
+            line_linked: { enable: true, color: "#c3282b" }
+        }
+    });
+</script>
+</body>
+</html>

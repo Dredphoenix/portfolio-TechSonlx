@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="12521719.png">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+  header ul li:nth-child(4) {
+  position: relative;
+}
+header nav ul li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background: var(--bs-light); 
+}
+
+</style>
+<body>
+    <div class="container">
+        <img src="12521719.png" alt="Dark Aesthetic Image" class="image">
+    </div>
+    <header>
+        <h1>MY PORT<span>FOLIO</span></h1>
+        <nav>
+           <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="projects" id="projects">
+            <h2>My Creations </h2>
+            <p>Here are some of my magical web creations that bring ideas to life.</p>
+        
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="projects/2.png" alt="Project 1">
+                    <div class="project-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A fully responsive and animated personal portfolio.</p>
+                       
+                    </div>
+                </div>
+        
+    
+                <div class="project-card">
+                    <img src="projects/3.png" alt="Project 2">
+                    <div class="project-info">
+                        <h3>Law Firm Website</h3>
+                        <p>Modern law firm platform with communication factors.</p>
+                    </div>
+                </div>
+        
+              
+                <div class="project-card">
+                    <img src="projects/1.png" alt="Project 3">
+                    <div class="project-info">
+                        <h3>Responsive Dashboard</h3>
+                        <p>A dashboard with responsive design & payment history.</p>
+                    </div>
+                </div>
+
+                 
+                <div class="project-card">
+                    <img src="projects/4.png" alt="Project 4">
+                    <div class="project-info">
+                        <h3>Calculator</h3>
+                        <p>A basic operational calculator.</p>
+                    </div>
+                </div>
+                <a href="https://github.com/Dredphoenix
+                " class="btn github">GitHub</a>
+            </div>
+        </section>
+        
+
+            <!-- CLOCK AND DATE -->
+            <div class="clock-container">
+                <div class="clock" id="clock"></div>
+        </div>
+            </section>     
+    </main>
+   
+ <!-- PARTICLE ANIMATION   -->
+    <div id="particles-js"></div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    particlesJS("particles-js", {
+        particles: {
+            number: { value: 100 },
+            size: { value: 3 },
+            move: { speed: 2 },
+            color: { value: "#c3282b" },
+            line_linked: { enable: true, color: "#c3282b" }
+        }
+    });
+</script>
+</body>
+</html>
